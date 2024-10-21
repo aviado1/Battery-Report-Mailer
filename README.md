@@ -9,11 +9,13 @@ This repository contains two PowerShell scripts designed to generate and analyze
 
 ### Step 1: Generate Battery Report and Send via Email
 
+1. **Suggestion**: Create a new folder in your Outlook named `Battery-Report` to store the reports you receive via email. You can also set up a rule in Outlook to automatically move emails with battery reports to this folder.
+
 1. **Script**: `BatteryReportMailer_v1.3.ps1`
 2. **Description**: This script generates a battery report for the local machine and sends it via email to the designated recipient.
 3. **Instructions**:
    - Open PowerShell as an administrator.
-   - Run the script to generate a battery report in HTML format and send it via email.
+   - Run the script to generate a battery report in HTML format and send it via email. You can run this script using any mechanism that supports remote PowerShell execution, such as Task Scheduler, a remote management tool, or a custom automation solution.
    - Make sure to adjust the SMTP server configuration and recipient details as needed.
 
 ### Step 2: Retrieve Battery Reports from Outlook and Export Analysis to Excel
